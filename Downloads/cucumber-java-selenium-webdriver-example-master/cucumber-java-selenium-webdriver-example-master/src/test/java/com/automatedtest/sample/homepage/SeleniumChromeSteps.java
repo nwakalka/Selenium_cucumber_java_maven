@@ -32,6 +32,7 @@ public class SeleniumChromeSteps extends BasePage{
 	@Given("^Open the web browser$")
 	public void open_the_web_browser() {
 	    // Write code here that turns the phrase above into concrete actions
+		seleniumChrome.goToHomePage();
 	}
 
 	@When("^Redirect it loc\\.gov$")
@@ -42,6 +43,8 @@ public class SeleniumChromeSteps extends BasePage{
 	@When("^User Click on$")
 	public void user_Click_on() {
 		// Write code here that turns the phrase above into concrete actions
+		seleniumChrome.clickCongressLink();
+		
 		System.out.println(" browser");
 	}
 
