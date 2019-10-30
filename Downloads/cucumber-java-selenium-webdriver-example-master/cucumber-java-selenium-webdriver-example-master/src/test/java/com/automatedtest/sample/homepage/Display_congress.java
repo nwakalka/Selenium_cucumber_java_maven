@@ -22,6 +22,7 @@ public class Display_congress extends BasePage {
 
 	Display_congress() {
 		PageFactory.initElements(driver, this);
+		commonBase = new CommonBase();
 	}
 
 	void goToHomePage() {
